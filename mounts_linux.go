@@ -58,7 +58,6 @@ func Mounts() ([]Mount, error) {
 		}
 		mounts = append(mounts, Mount{parts[0], parts[1], parts[2], parts[3]})
 	}
-	panic("unreachable")
 }
 
 func isFs(path string, magic int64) bool {
@@ -173,7 +172,6 @@ func readLines(name string) (lines []string) {
 		}
 		lines = append(lines, string(line))
 	}
-	return
 }
 
 func InMountNamespace() bool {
